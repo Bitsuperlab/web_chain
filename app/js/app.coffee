@@ -24,7 +24,7 @@ app.run ($rootScope, $location, $idle, $interval, editableOptions, editableTheme
         history.push $location.$$path
 
     $rootScope.history_back = ()->
-        prevUrl = if history.length > 1 then history.splice(-2)[0] else "/home"
+        prevUrl = if history.length > 1 then history.splice(-2)[0] else "/blocks"
         $location.path(prevUrl)
 
     $rootScope.loading = false

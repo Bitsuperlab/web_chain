@@ -60,7 +60,7 @@ app.config ($idleProvider, $stateProvider, $urlRouterProvider, $translateProvide
     $idleProvider.idleDuration(1776)
     $idleProvider.warningDuration(60)
 
-    $urlRouterProvider.otherwise('/home')
+    $urlRouterProvider.otherwise('/blocks')
 
     home =
         name: 'home'
@@ -176,6 +176,5 @@ app.config ($idleProvider, $stateProvider, $urlRouterProvider, $translateProvide
         templateUrl: "market/market.html"
         controller: "MarketController"
 
-    $stateProvider.state(home).state(help).state(preferences).state(unlockwallet).state(proposals).state(createaccount)
-    .state(console).state(editaccount).state(accounts).state(blocks).state(createwallet).state(account).state(directory)
+    $stateProvider.state(home).state(help).state(preferences).state(proposals).state(blocks).state(directory)
     .state(delegates).state(block).state(transaction).state(blocksbyround).state(markets).state(market)

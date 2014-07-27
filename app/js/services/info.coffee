@@ -50,7 +50,7 @@ class Info
         @interval (=>
             if !@is_refreshing
                 @refresh_info()
-        ), 2500
+        ), 5000
 
     constructor: (@q, @log, @location, @growl, @common_api, @blockchain, @blockchain_api, @interval) ->
         @watch_for_updates()
